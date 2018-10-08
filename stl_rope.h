@@ -34,7 +34,7 @@
 #    include <mutex.h>
 # endif
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 #if defined(__sgi) && !defined(__GNUC__) && (_MIPS_SIM != _MIPS_SIM_ABI32)
 #pragma set woff 1174
@@ -2699,7 +2699,7 @@ __STL_TEMPLATE_NULL struct hash<wrope>
 #pragma reset woff 1174
 #endif
 
-__STL_END_NAMESPACE
+}
 
 # include <ropeimpl.h>
 

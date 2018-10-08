@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_MULTIMAP_H
 #define __SGI_STL_INTERNAL_MULTIMAP_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 #if defined(__sgi) && !defined(__GNUC__) && (_MIPS_SIM != _MIPS_SIM_ABI32)
 #pragma set woff 1174
@@ -266,7 +266,7 @@ inline void swap(multimap<_Key,_Tp,_Compare,_Alloc>& __x,
 #pragma reset woff 1375
 #endif
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_MULTIMAP_H */
 

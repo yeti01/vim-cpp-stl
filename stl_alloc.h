@@ -92,7 +92,7 @@
 #   define __NODE_ALLOCATOR_THREADS false
 #endif
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 #if defined(__sgi) && !defined(__GNUC__) && (_MIPS_SIM != _MIPS_SIM_ABI32)
 #pragma set woff 1174
@@ -888,7 +888,7 @@ struct _Alloc_traits<_Tp, __allocator<_Tp1, debug_alloc<_Alloc> > >
 #pragma reset woff 1174
 #endif
 
-__STL_END_NAMESPACE
+}
 
 #undef __PRIVATE
 

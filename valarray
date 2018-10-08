@@ -22,7 +22,7 @@
 #include <new>
 
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 class slice;
 class gslice;
@@ -1763,7 +1763,7 @@ valarray<_Tp> valarray<_Tp>::cshift(int __m) const
   return __tmp;
 }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_VALARRAY */
 

@@ -44,7 +44,7 @@
 #include <stl_vector.h>
 #include <stl_hash_fun.h>
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _Val>
 struct _Hashtable_node
@@ -1045,7 +1045,7 @@ void hashtable<_Val,_Key,_HF,_Ex,_Eq,_All>
   __STL_UNWIND(clear());
 }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_HASHTABLE_H */
 

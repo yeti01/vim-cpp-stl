@@ -36,7 +36,7 @@
 
 #else /* __STL_NO_EXCEPTION_HEADER */
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 class _Exception {
 public:
@@ -46,7 +46,7 @@ public:
 
 #define __STL_EXCEPTION_BASE _Exception
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __STL_NO_EXCEPTION_HEADER */
 

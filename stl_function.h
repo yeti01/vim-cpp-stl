@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_FUNCTION_H
 #define __SGI_STL_INTERNAL_FUNCTION_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _Arg, class _Result>
 struct unary_function {
@@ -716,7 +716,7 @@ inline const_mem_fun1_ref_t<_Ret,_Tp,_Arg>
 mem_fun1_ref(_Ret (_Tp::*__f)(_Arg) const)
   { return const_mem_fun1_ref_t<_Ret,_Tp,_Arg>(__f); }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_FUNCTION_H */
 

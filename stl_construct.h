@@ -33,7 +33,7 @@
 
 #include <new.h>
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 // construct and destroy.  These functions are not part of the C++ standard,
 // and are provided for backward compatibility with the HP STL.
@@ -81,7 +81,7 @@ inline void destroy(_ForwardIterator __first, _ForwardIterator __last) {
 inline void destroy(char*, char*) {}
 inline void destroy(wchar_t*, wchar_t*) {}
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_CONSTRUCT_H */
 

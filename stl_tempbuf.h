@@ -32,7 +32,7 @@
 #define __SGI_STL_INTERNAL_TEMPBUF_H
 
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _Tp>
 pair<_Tp*, ptrdiff_t> 
@@ -153,7 +153,7 @@ struct temporary_buffer : public _Temporary_buffer<_ForwardIterator, _Tp>
   ~temporary_buffer() {}
 };
     
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_TEMPBUF_H */
 

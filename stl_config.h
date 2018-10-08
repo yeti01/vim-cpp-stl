@@ -117,7 +117,7 @@
 // * bool, true, and false, if __STL_NO_BOOL is defined.
 // * typename, as a null macro if it's not already a keyword.
 // * explicit, as a null macro if it's not already a keyword.
-// * namespace-related macros (__STD, __STL_BEGIN_NAMESPACE, etc.)
+// * namespace-related macros (__STD, namespace std {, etc.)
 // * exception-related macros (__STL_TRY, __STL_UNWIND, etc.)
 // * __stl_assert, either as a test or as a null macro, depending on
 //   whether or not __STL_ASSERTIONS is defined.
@@ -430,8 +430,8 @@
 # if defined(__STL_HAS_NAMESPACES) && !defined(__STL_NO_NAMESPACES)
 #   define __STL_USE_NAMESPACES
 #   define __STD std
-#   define __STL_BEGIN_NAMESPACE namespace std {
-#   define __STL_END_NAMESPACE }
+#   define namespace std { namespace std {
+#   define } }
 #   if defined(__STL_FUNCTION_TMPL_PARTIAL_ORDER) && \
        !defined(__STL_NO_RELOPS_NAMESPACE)
 #     define __STL_USE_NAMESPACE_FOR_RELOPS
@@ -446,8 +446,8 @@
 #   endif /* Use std::rel_ops namespace */
 # else
 #   define __STD 
-#   define __STL_BEGIN_NAMESPACE 
-#   define __STL_END_NAMESPACE 
+#   define namespace std { 
+#   define } 
 #   undef  __STL_USE_NAMESPACE_FOR_RELOPS
 #   define __STL_BEGIN_RELOPS_NAMESPACE 
 #   define __STL_END_RELOPS_NAMESPACE 

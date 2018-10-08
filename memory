@@ -23,7 +23,7 @@
 #include <stl_raw_storage_iter.h>
 
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 #if defined(__SGI_STL_USE_AUTO_PTR_CONVERSIONS) && \
     defined(__STL_MEMBER_TEMPLATES)
@@ -120,7 +120,7 @@ public:
 #endif /* auto ptr conversions && member templates */
 };
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_MEMORY */
 

@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_PAIR_H
 #define __SGI_STL_INTERNAL_PAIR_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _T1, class _T2>
 struct pair {
@@ -92,7 +92,7 @@ inline pair<_T1, _T2> make_pair(const _T1& __x, const _T2& __y)
   return pair<_T1, _T2>(__x, __y);
 }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_PAIR_H */
 

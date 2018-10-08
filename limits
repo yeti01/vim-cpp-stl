@@ -25,7 +25,7 @@
 #include <float.h>
 #include <stl_config.h>
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 enum float_round_style {
   round_indeterminate       = -1,
@@ -458,7 +458,7 @@ public:
   static long double round_error() __STL_NOTHROW { return 4; } // Units: ulps.
 };
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_CPP_LIMITS */
 

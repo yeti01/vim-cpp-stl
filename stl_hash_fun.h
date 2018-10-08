@@ -33,7 +33,7 @@
 
 #include <stddef.h>
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _Key> struct hash { };
 
@@ -84,7 +84,7 @@ __STL_TEMPLATE_NULL struct hash<unsigned long> {
   size_t operator()(unsigned long __x) const { return __x; }
 };
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_HASH_FUN_H */
 

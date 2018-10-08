@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_BVECTOR_H
 #define __SGI_STL_INTERNAL_BVECTOR_H
 
-__STL_BEGIN_NAMESPACE 
+namespace std { 
 
 static const int __WORD_BIT = int(CHAR_BIT*sizeof(unsigned int));
 
@@ -367,9 +367,9 @@ protected:
 #endif
 
 #      ifdef __SGI_STL_VECBOOL_TEMPLATE
-       __STL_END_NAMESPACE
+       }
 #      include <stl_vector.h>
-       __STL_BEGIN_NAMESPACE
+       namespace std {
 template<class _Alloc> class vector<bool,_Alloc>
   : public _Bvector_base<_Alloc>
 #      else /* __SGI_STL_VECBOOL_TEMPLATE */
@@ -883,7 +883,7 @@ inline bool operator>=(const bit_vector& __x, const bit_vector& __y)
 #pragma reset woff 1375
 #endif
 
-__STL_END_NAMESPACE 
+} 
 
 #endif /* __SGI_STL_INTERNAL_BVECTOR_H */
 

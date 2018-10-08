@@ -49,7 +49,7 @@
 #define __BITSET_WORDS(__n,__wt) \
  ((__n) < 1 ? 1 : ((__n) + __BITS_PER_WORDT(__wt) - 1)/__BITS_PER_WORDT(__wt))
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 #if defined(__sgi) && !defined(__GNUC__) && (_MIPS_SIM != _MIPS_SIM_ABI32)
 #pragma set woff 1209
@@ -1190,7 +1190,7 @@ unsigned char _First_one<__dummy>::_S_first_one[] = {
 #pragma reset woff 1209
 #endif
 
-__STL_END_NAMESPACE
+}
 
 
 #undef __BITS_PER_WORDT

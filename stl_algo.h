@@ -33,7 +33,7 @@
 
 #include <stl_heap.h>
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 #if defined(__sgi) && !defined(__GNUC__) && (_MIPS_SIM != _MIPS_SIM_ABI32)
 #pragma set woff 1209
@@ -2891,7 +2891,7 @@ bool is_sorted(_ForwardIter __first, _ForwardIter __last,
 #pragma reset woff 1209
 #endif
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_ALGO_H */
 

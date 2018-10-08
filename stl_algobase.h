@@ -62,7 +62,7 @@
 #include <stl_iterator.h>
 #endif
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 // swap and iter_swap
 
@@ -586,7 +586,7 @@ int lexicographical_compare_3way(_InputIter1 __first1, _InputIter1 __last1,
   return __lexicographical_compare_3way(__first1, __last1, __first2, __last2);
 }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_ALGOBASE_H */
 

@@ -36,7 +36,7 @@
 #include <windows.h>
 #endif
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 
 // Class _Refcount_Base provides a type, _RC_t, a data member,
@@ -355,7 +355,7 @@ private:
   _STL_auto_lock(const _STL_auto_lock&);
 };
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_THREADS_H */
 

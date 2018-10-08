@@ -21,7 +21,7 @@
 
 #include <stl_string_fwd.h>
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 class __Named_exception : public __STL_EXCEPTION_BASE {
 public:
@@ -81,7 +81,7 @@ public:
   underflow_error(const string& __arg) : runtime_error(__arg) {}
 };
 
-__STL_END_NAMESPACE
+}
 
 #ifndef __SGI_STL_STRING
 #include <string>

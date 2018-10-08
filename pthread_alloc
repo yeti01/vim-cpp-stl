@@ -38,7 +38,7 @@
 #  include <new>
 #endif
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 #define __STL_DATA_ALIGNMENT 8
 
@@ -486,7 +486,7 @@ struct _Alloc_traits<_Tp, pthread_allocator<_Atype> >
 
 #endif /* __STL_USE_STD_ALLOCATORS */
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_PTHREAD_ALLOC */
 

@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_STACK_H
 #define __SGI_STL_INTERNAL_STACK_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 // Forward declarations of operators == and <, needed for friend declaration.
 
@@ -124,7 +124,7 @@ bool operator>=(const stack<_Tp,_Seq>& __x, const stack<_Tp,_Seq>& __y)
 
 #endif /* __STL_FUNCTION_TMPL_PARTIAL_ORDER */
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_STACK_H */
 

@@ -17,7 +17,7 @@
 #include <stddef.h>
 #include <stl_alloc.h>
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _CharT> struct char_traits;
 template <class _CharT, 
@@ -30,7 +30,7 @@ typedef basic_string<wchar_t> wstring;
 
 static const char* __get_c_string(const string&);
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_STRING_FWD_H */
 

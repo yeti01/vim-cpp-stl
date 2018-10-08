@@ -32,7 +32,7 @@
 #ifndef __SGI_STL_INTERNAL_NUMERIC_H
 #define __SGI_STL_INTERNAL_NUMERIC_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _InputIterator, class _Tp>
 _Tp accumulate(_InputIterator __first, _InputIterator __last, _Tp __init)
@@ -230,7 +230,7 @@ iota(_ForwardIterator __first, _ForwardIterator __last, _Tp __value)
     *__first++ = __value++;
 }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_NUMERIC_H */
 

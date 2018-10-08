@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_RAW_STORAGE_ITERATOR_H
 #define __SGI_STL_INTERNAL_RAW_STORAGE_ITERATOR_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 template <class _ForwardIterator, class _Tp>
 class raw_storage_iterator {
@@ -72,7 +72,7 @@ iterator_category(const raw_storage_iterator<_ForwardIterator, _Tp>&)
 
 #endif /* __STL_CLASS_PARTIAL_SPECIALIZATION */
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_RAW_STORAGE_ITERATOR_H */
 

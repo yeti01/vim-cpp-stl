@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_QUEUE_H
 #define __SGI_STL_INTERNAL_QUEUE_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 // Forward declarations of operators < and ==, needed for friend declaration.
 
@@ -213,7 +213,7 @@ public:
 
 // no equality is provided
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_QUEUE_H */
 

@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_ITERATOR_H
 #define __SGI_STL_INTERNAL_ITERATOR_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 
 template <class _Container>
@@ -964,7 +964,7 @@ iterator_category(const ostream_iterator<_Tp>&) {
 
 #endif /* __STL_USE_NEW_IOSTREAMS */
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_ITERATOR_H */
 

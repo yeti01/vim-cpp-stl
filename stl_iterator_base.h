@@ -35,7 +35,7 @@
 // The internal file stl_iterator.h contains predefined iterators, 
 // such as front_insert_iterator and istream_iterator.
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 struct input_iterator_tag {};
 struct output_iterator_tag {};
@@ -347,7 +347,7 @@ inline void advance(_InputIterator& __i, _Distance __n) {
   __advance(__i, __n, iterator_category(__i));
 }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_ITERATOR_BASE_H */
 

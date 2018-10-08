@@ -21,7 +21,7 @@
 #include <iosfwd>
 #endif /* use new iostreams */
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 // Class __char_traits_base.
 
@@ -166,7 +166,7 @@ struct _Lt_traits
     { return _Traits::lt(__x, __y); }
 };
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_CHAR_TRAITS_H */
 

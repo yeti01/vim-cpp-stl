@@ -31,7 +31,7 @@
 #ifndef __SGI_STL_INTERNAL_UNINITIALIZED_H
 #define __SGI_STL_INTERNAL_UNINITIALIZED_H
 
-__STL_BEGIN_NAMESPACE
+namespace std {
 
 // uninitialized_copy
 
@@ -270,7 +270,7 @@ __uninitialized_copy_fill(_InputIter __first1, _InputIter __last1,
   __STL_UNWIND(destroy(__first2, __mid2));
 }
 
-__STL_END_NAMESPACE
+}
 
 #endif /* __SGI_STL_INTERNAL_UNINITIALIZED_H */
 
