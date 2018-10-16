@@ -18,7 +18,7 @@ This is a modified version of the C++ STL header files for use with vim and ctag
 2. Run ctags
 
         $ cd $VIM/vim-cpp-stl
-        $ ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++
+        $ ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++ --exclude=tags
 
 3. Add the following lines to your `vimrc`
 
